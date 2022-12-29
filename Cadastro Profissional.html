@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>CadastroProfissional</title>
+  <link rel="stylesheet" type="text/css" href="css/fisio.css">
+  <link rel="stylesheet" type="text/css" href="css/CadastroProfissional.css">
+
+  <style type="text/css">
+
+    body{
+      background-image: url("img/fundo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  </style>
+
+  <a href="http://localhost:63342/Fisiopeti.html/Fisiopeti.html">
+    <nav id="menu">
+
+      <img src="img/logof.png" width="70%">
+  </a>
+  <nav id="home">
+
+    <h3></h3>
+
+  </nav>
+  <ul>
+
+    <div class="wrapper">
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="agenda">
+        <div class="trigger-wrapper">
+          <label for="agenda">
+            <li class="titulo">Agenda FP</li>
+          </label>
+
+          <li class="conteudo"><a href="agenda%20paciente.html">Agenda do Paciente</a> </li>
+          <li class="conteudo"><a href="agendao%20profissional.html">Agenda do Profissional</a> </li>
+          <li class="conteudo"><a href="agenda%20por%20categoria.html">Agenda por Categoria</a></li>
+          <li class="conteudo"><a href="agendabasedacrianca.html">Agenda base Paciente</a></li>
+          <li class="conteudo"><a href="agendabaseprofissional.html">Agenda base Profissional</a></li>
+          <li class="conteudo"><a href="CriarAgendaSemanal.html">criar agenda da Semana</a></li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="profissional">
+        <div class="trigger-wrapper">
+          <label for="profissional">
+            <li class="titulo">Profissional</li>
+          </label>
+          <li class="conteudo">Listar Profissionais</li>
+          <li class="conteudo">Associar Categoria</li>
+          <li class="conteudo">Cadastrar Profissional</li>
+          <li class="conteudo">Importa Foto</li>
+          <li class="conteudo">Listar Foto</li>
+
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="paciente">
+        <div class="trigger-wrapper">
+          <label for="paciente">
+            <li class="titulo">Paciente</li>
+          </label>
+          <li class="conteudo">Cadastrar Paciente</li>
+          <li class="conteudo">Listar Paciente</li>
+          <li class="conteudo">Listar Escolas</li>
+          <li class="conteudo">Importar Foto</li>
+          <li class="conteudo">Listar Fotos</li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="medico">
+        <div class="trigger-wrapper">
+          <label for="medico">
+            <li class="titulo">Médico</li>
+          </label>
+          <li class="conteudo">Listar Médico</li>
+          <li class="conteudo">Cadastrar Médico</li>
+        </div>
+      </div>
+  </ul>
+
+
+  <form action="/fisiopeti/content/paciente/pesquisar-paciente.php" method="post">
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Paciente" name="PesquisaPaciente">
+      <img src="img/lupa.png" class="btn">
+      <a class="search-bth" href="#"></a>
+    </div>
+  </form>
+
+  <form action="/fisiopeti/content/paciente/pesquisar-profissional.php" method="post">
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Profissional" name="PesquisaProfissional">
+      <img src="img/lupa.png" class="btn">
+      <a class="search-bth" href="#"></a>
+    </div>
+    <nav id="demais">
+      <ul>
+        <li>Profissional FP+</li>
+        <li>Configuração</li>
+        <li>Ajuda</li>
+      </ul>
+    </nav>
+    </div>
+    </nav>
+
+    <div id="conteudo">
+      <h3>Cadastro de profissional</h3>
+      <div class="row">
+        <form action="cadastrar-profissional-2.php" method="post" class="form-horizontal">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label class="control-label col-sm-3">Nome Completo:</label>
+              <div class="col-sm-9">
+                <input id="SearchNomeCompleto" type="text" class="form-control" name="NomeCompleto" placeholder="Obrigatório" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-3">Nome social:</label>
+              <div class="col-sm-9">
+                <input id="SearchNomeSocial" type="text" class="form-control" required name="NomeCurto" contentEditable="true" placeholder="Obrigatório" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-3">Funcão:</label>
+              <div class="col-sm-9">
+                <select class="form-control" name="id_funcao">
+                  <option value="">Selecionar</option>
+                  <option value="33"></option><option value="19">A.T./Psicólogo</option><option value="3">Administrativo</option><option value="30">Aplicador (a)</option><option value="29">Enfermagem</option><option value="17">Fisioterapeuta</option><option value="21">Fisioterapeuta/ Estagiário</option><option value="20">Fonoaudiólogo</option><option value="18">Fonoaudiólogo/ Estagiário</option><option value="23">Musicoterapeuta</option><option value="31">Nutricionista</option><option value="28">Pedagogo</option><option value="1">Psicólogo</option><option value="8">Psicólogo/Estagiário</option><option value="7">Psicólogo/Supervisora</option><option value="15">Psicomotricista</option><option value="12">Psicopedagogo</option><option value="32">Serviços Gerais</option><option value="10">T.O.</option><option value="13">T.O./Estagiário</option>			                    </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-3">Data nasc.:</label>
+              <div class="col-sm-9">
+                <input type="date" class="form-control" name='DataNascimento'>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-3">CPF:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name='Cpf' id="Cpf" placeholder="999.999.999-99">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3">RG:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name='Rg' id="Rg" placeholder="99.999.999-9">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3">Órgão emissor:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name='OrgaoEmissor'>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-3">Registro:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="Registro" placeholder="CRP ou CREFITO">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-3">Registro CRPJ:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="Crpj" placeholder="">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-3">Instituição de ensino:</label>
+              <div class="col-sm-9">
+                <textarea rows="3" class="form-control" style="width: 30%" name="Graduacao" contentEditable="true"></textarea>
+              </div>
+            </div>
+
+            <div class="col-lg-0">
+              <div class="form-group">
+                <label class="control-label col-sm-3">E-mail:</label>
+                <div class="col-sm-9">
+                  <input type="mail" class="form-control" name='Email'>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Telefone:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="Telefone">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Celular:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="Celular">
+                </div>
+              </div>
+
+
+
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Rua, Av.:</label>
+                <div class="col-sm-9">
+                  <input id="SearchEndereco" type="text" class="form-control" name="Endereco" contentEditable="true" value="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Nº:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="Numero" contentEditable="true" value="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Compl.:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="Complemento" contentEditable="true" value="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Bairro:</label>
+                <div class="col-sm-9">
+                  <input id="SearchBairro" type="text" class="form-control" name="Bairro" contentEditable="true" value="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Cidade:</label>
+                <div class="col-sm-9">
+                  <input id="SearchCidade" type="text" class="form-control" name="Cidade" contentEditable="true" value="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Estado (UF):</label>
+                <div class="col-sm-9">
+                  <select class="form-control" name="Estado">
+                    <option value="">Selecionar</option>
+                    <option value="AC">Acre</option><option value="AL">Alagoas</option><option value="AP">Amapá</option><option value="AM">Amazonas</option><option value="BA">Bahia</option><option value="CE">Ceará</option><option value="DF">Distrito Federal</option><option value="ES">Espírito Santo</option><option value="GO">Goiás</option><option value="MA">Maranhão</option><option value="MT">Mato Grosso</option><option value="MS">Mato Grosso do Sul</option><option value="MG">Minas Gerais</option><option value="PA">Pará</option><option value="PB">Paraíba</option><option value="PI">Piauí</option><option value="RJ">Rio de Janeiro</option><option value="RN">Rio Grande do Norte</option><option value="RS">Rio Grande do Sul</option><option value="RO">Rondônia</option><option value="SC">Santa Catarina</option><option value="SP">São Paulo</option><option value="SE">Sergipe</option><option value="TO">Tocantins</option>			                    </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">CEP:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="Cep" name="Cep" contentEditable="true" placeholder="99999-999" value="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3">Observação:</label>
+                <div class="col-sm-9">
+                  <textarea rows="3" class="form-control" style="width: 100%" name="ProfissionalObservacao" contentEditable="true"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3"></label>
+                <div class="col-sm-9">
+                  <button type="submit" class="btn btn-success">Confirmar</button>
+                </div>
+          </div>
+            </div>
+
+    </div>
+    </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+h3 {
+  background-color: #f1f1f1;
+  width: 250px;
+}
+
+.cabecalho {
+  position: absolute;
+  margin: -600px 10px 10px 300px;
+  color: #222222;
+  font-size: 20px;
+  color: #222222;
+}
+
+.btn-default {
+  margin: 10px 10px 10px 10px ;
+  width: 80px;
+  font-size: 15px;
+  color: #222222;
+}
+.btn-default:hover {
+  background: #f1f1f1;
+}
+.btn-success {
+  background: rgb(245,0,0,0.6);
+  padding: 4px;
+  color: #222222;
+  text-decoration: none;
+}
+.table th {
+  position: relative;
+  top: -450px;
+  left: 300px;
+  padding: 1px;
+  border: 1px solid #222222 ;
+  width: 200px;
+  font-size: 20px;
+}
+.table td {
+  position: relative;
+  top: -450px;
+  left: 300px;
+  padding: 1px;
+  border: 1px solid #222222 ;
+  width: 50px;
+  background: rgb(240, 240, 240,0.6)
+
+}

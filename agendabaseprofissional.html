@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda_base_profissional</title>
+  <link rel="stylesheet" type="text/css" href="css/fisio.css">
+  <link rel="stylesheet" type="text/css" href="css/agenda_base_terapeuta.css">
+
+  <style type="text/css">
+
+    body{
+      background-image: url("img/fundo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  </style>
+
+  <a href="http://localhost:63342/Fisiopeti.html/Fisiopeti.html">
+    <nav id="menu">
+
+      <img src="img/logof.png" width="70%">
+  </a>
+  <nav id="home">
+
+    <h3></h3>
+
+  </nav>
+  <ul>
+
+    <div class="wrapper">
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="agenda">
+        <div class="trigger-wrapper">
+          <label for="agenda">
+            <li class="titulo">Agenda FP</li>
+          </label>
+
+          <li class="conteudo"><a href="agenda%20paciente.html">Agenda do Paciente</a> </li>
+          <li class="conteudo"><a href="agendao%20profissional.html">Agenda do Profissional</a> </li>
+          <li class="conteudo"><a href="agenda%20por%20categoria.html">Agenda por Categoria</a></li>
+          <li class="conteudo"><a href="agendabasedacrianca.html">Agenda base Paciente</a></li>
+          <li class="conteudo"><a href="agendabaseprofissional.html">Agenda base Profissional</a></li>
+          <li class="conteudo"><a href="CriarAgendaSemanal.html">criar agenda da Semana</a></li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="profissional">
+        <div class="trigger-wrapper">
+          <label for="profissional">
+            <li class="titulo">Profissional</li>
+          </label>
+          <li class="conteudo">Listar Profissionais</li>
+          <li class="conteudo">Associar Categoria</li>
+          <li class="conteudo">Cadastrar Profissional</li>
+          <li class="conteudo">Importa Foto</li>
+          <li class="conteudo">Listar Foto</li>
+
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="paciente">
+        <div class="trigger-wrapper">
+          <label for="paciente">
+            <li class="titulo">Paciente</li>
+          </label>
+          <li class="conteudo">Cadastrar Paciente</li>
+          <li class="conteudo">Listar Paciente</li>
+          <li class="conteudo">Listar Escolas</li>
+          <li class="conteudo">Importar Foto</li>
+          <li class="conteudo">Listar Fotos</li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="medico">
+        <div class="trigger-wrapper">
+          <label for="medico">
+            <li class="titulo">Médico</li>
+          </label>
+          <li class="conteudo">Listar Médico</li>
+          <li class="conteudo">Cadastrar Médico</li>
+        </div>
+      </div>
+  </ul>
+
+
+  <form action="/fisiopeti/content/paciente/pesquisar-paciente.php" method="post">
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Paciente" name="PesquisaPaciente">
+      <img src="img/lupa.png" class="btn">
+      <a class="search-bth" href="#"></a>
+    </div>
+  </form>
+
+  <form action="/fisiopeti/content/paciente/pesquisar-profissional.php" method="post">
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Profissional" name="PesquisaProfissional">
+      <img src="img/lupa.png" class="btn">
+      <a class="search-bth" href="#"></a>
+    </div>
+    <nav id="demais">
+      <ul>
+        <li>Profissional FP+</li>
+        <li>Configuração</li>
+        <li>Ajuda</li>
+      </ul>
+    </nav>
+    </div>
+    </nav>
+    <div style="padding: 0 25px;">
+      <div class="cabecalho">
+        <h3>Agenda base do terapeuta</h3>
+        <span style="margin-right: 25px;"><label>Nome:</label> Selecionar</span>
+        <!-- <span style="margin-right: 25px;"><label>Horários de preferência:</label> </span> -->
+        <span class="hidden-print form-group">
+					<span data-toggle="tooltip" title="Ver dados do terapeuta"><button type="button"  class="btn btn-default">Dados</a></span>
+					<span data-toggle="tooltip" title="Alterar terapeuta"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Filtro</button></span>
+					<a href="agenda-base-profissional-ativar-remocao-paciente.php?id_profissional=" class="btn btn-default" data-toggle="tooltip" title="Ativar / desativar botão para cancelar criança">&#x2715;</a>
+					<button onclick="window.print()" class="btn btn-default hidden-print">Imprimir</button>
+				</span>
+      </div>
+      <div style="margin-top: 15px;">
+        <table class="table table-striped table-hover table-condensed table-bordered">
+          <thead>
+          <tr>
+            <td>Hora</td>
+            <th class="largura-col">Segunda</th>
+            <th class="largura-col">Terça</th>
+            <th class="largura-col">Quarta</th>
+            <th class="largura-col">Quinta</th>
+            <th class="largura-col">Sexta</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr><td>08:00</td><td></td><td></td><td><span class="Link hidden-print"><a href="agenda-base-paciente.php?id_paciente=302">Arthur Hara</a><br></span><span class="visible-print">Arthur Hara</span><span style="font-size:0.8em;">Fonoaudiologia</span> - <span class="badge" style="background-color:#4784f5;color:#ffffff; margin-right: 5px;">Marco polo</span></td><td></td><td></td></tr><tr><td>09:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>10:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>11:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>12:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>13:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>14:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>16:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>17:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>18:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>19:00</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>20:00</td><td></td><td></td><td></td><td></td><td></td></tr>					</tbody>
+
+        </table>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </body>
+</html>

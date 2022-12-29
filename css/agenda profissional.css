@@ -1,0 +1,70 @@
+h3 {
+  background-color: #f1f1f1;
+  width: 250px;
+}
+.profissional {
+  position: absolute;
+  margin: -600px 10px 10px 300px;
+  color: #222222;
+  font-size: 20px;
+
+}
+
+.btn-default {
+  width: 100px;
+  padding: 5px;
+  margin: 1px;
+  background: rgb( 60,179,113,0.5);
+  color: green;
+
+}
+div#tabela {
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  padding: 1px;
+  background: rgb( 0,0,0,0.3);
+  border: 1px solid #222222 ;
+  width: 1100px;
+}
+div#tabela td {
+  border: 1px dashed #222222 ;
+  padding: 2px;
+  font-size: 26px;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 1px #000000;
+
+
+}
+div#tabela th {
+  border: 1px solid #222222 ;
+  padding: 2px;
+  font-size: 23px;
+color: #f1f1f1;
+  text-shadow: 1px 1px 1px #000000;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px  #000000;
+  width: 1100px;
+
+
+}
+div#tabela tr{
+  border: 1px solid #222222;
+  background-color: rgba(60,179,113,0.3 );
+  cursor: pointer;
+
+
+}
+div#tabela td:hover{
+  background: rgb( 60,179,113,0.5);
+}
+div#tabela th:hover {
+  background: rgb( 256,179,113,0.5);
+}
+.col {
+  background-color: rgba(0,0,0,0.5);
+}
+.form-control {
+
+  font-size: 15px;
+}

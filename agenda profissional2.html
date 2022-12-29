@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>agendaprofissional=></title>
+  <link rel="stylesheet" type="text/css" href="css/fisio.css">
+  <link rel="stylesheet" type="text/css" href="css/agenda%20profissional.css">
+
+
+
+  <style type="text/css">
+
+    body{
+      background-image: url("img/fundo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  </style>
+
+  <a href="http://localhost:63342/Fisiopeti.html/Fisiopeti.html">
+    <nav id="menu">
+
+      <img src="img/logof.png" width="70%">
+  </a>
+  <nav id="home">
+
+    <h3></h3>
+
+  </nav>
+  <ul>
+
+    <div class="wrapper">
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="agenda">
+        <div class="trigger-wrapper">
+          <label for="agenda">
+            <li class="titulo">Agenda FP</li>
+          </label>
+
+          <li class="conteudo"><a href="agenda%20paciente.html">Agenda do Paciente</a> </li>
+          <li class="conteudo"><a href="agendao%20profissional.html">Agenda do Profissional</a> </li>
+          <li class="conteudo"><a href="agenda%20por%20categoria.html">Agenda por Categoria</a></li>
+          <li class="conteudo"><a href="agendabasedacrianca.html">Agenda base Paciente</a></li>
+          <li class="conteudo"><a href="agendabaseprofissional.html">Agenda base Profissional</a></li>
+          <li class="conteudo"><a href="CriarAgendaSemanal.html">criar agenda da Semana</a></li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="profissional">
+        <div class="trigger-wrapper">
+          <label for="profissional">
+            <li class="titulo">Profissional</li>
+          </label>
+          <li class="conteudo">Listar Profissionais</li>
+          <li class="conteudo">Associar Categoria</li>
+          <li class="conteudo">Cadastrar Profissional</li>
+          <li class="conteudo">Importa Foto</li>
+          <li class="conteudo">Listar Foto</li>
+
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="paciente">
+        <div class="trigger-wrapper">
+          <label for="paciente">
+            <li class="titulo">Paciente</li>
+          </label>
+          <li class="conteudo">Cadastrar Paciente</li>
+          <li class="conteudo">Listar Paciente</li>
+          <li class="conteudo">Listar Escolas</li>
+          <li class="conteudo">Importar Foto</li>
+          <li class="conteudo">Listar Fotos</li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="medico">
+        <div class="trigger-wrapper">
+          <label for="medico">
+            <li class="titulo">Médico</li>
+          </label>
+          <li class="conteudo">Listar Médico</li>
+          <li class="conteudo">Cadastrar Médico</li>
+        </div>
+      </div>
+  </ul>
+
+
+  <form action="/fisiopeti/content/paciente/pesquisar-paciente.php" method="post">
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Paciente" name="PesquisaPaciente">
+      <img src="img/lupa.png" class="btn">
+      <a class="search-bth" href="#"></a>
+    </div>
+  </form>
+
+  <form action="/fisiopeti/content/paciente/pesquisar-profissional.php" method="post">
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Profissional" name="PesquisaProfissional">
+      <img src="img/lupa.png" class="btn">
+      <a class="search-bth" href="#"></a>
+    </div>
+    <nav id="demais">
+      <ul>
+        <li>Profissional FP+</li>
+        <li>Configuração</li>
+        <li>Ajuda</li>
+      </ul>
+    </nav>
+    </div>
+    </nav>
+    <div style="padding: 0 25px;">
+      <div class="profissional">
+        <h3>Agenda do Profissional</h3>
+        <span style="margin-right: 25px;"><label>Nome: <select class="form-control" name="id_categoriaX">
+          <option value="9">Acompanhante Terapêutico </option><option value="17">Administração</option><option value="16">Aplicador</option><option value="15">Educador Físico</option><option value="18">Enfermagem</option><option value="14">Equoterapia</option><option value="6">Fisioterapia</option><option value="1">Fonoaudiologia</option><option value="7">Musicoterapia</option><option value="19">Nutricionista</option><option value="10">Psicologia</option><option value="12">Psicomotricidade</option><option value="8">Psicopedagogia</option><option value="5">Terapeuta Ocupacional</option><option value="99">Todas as categorias</option>	            	</select>
+
+        </span>
+        <span style="margin-right: 25px;"><label>Unidade:</label> <select class="form-control" name="id_unidade" required>
+              <option value="1">Matriz</option>
+              <option value="1">Marco polo</option><option value="3">Jurubatuba</option><option value="4">Online</option><option value="5">Coral </option><option value="6">Vila Sonia</option>						</select>
+          </span>
+        <span class="hidden-print form-group">
+        <span data-toggle="tooltip" title="Semana anterior"><a href="alterar-inicio-da-semana-anterior.php?DataAgenda=2022-12-26&id_paciente=140&id_categoria="
+                                                               class="btn btn-default">&lsaquo;</a></span>
+					<span data-toggle="tooltip" title="Próxima semana"><a href="agenda%20profissional2.html"
+                                                                class="btn btn-default">&rsaquo;</a></span>
+					<span data-toggle="tooltip" title="Ver dados da criança"><a href="../paciente/paciente.php?id_paciente=140"
+                                                                      class="btn btn-default">Dados</a></span>
+					<span data-toggle="tooltip" title="Alterar criança e semana"><button type="button"
+                                                                               class="btn btn-default" data-toggle="modal" data-target="#myModal">Filtro</button></span>
+					<button onclick="window.print()" class="btn btn-default hidden-print">Imprimir</button>
+				</span>
+      </div>
+      <div id="tabela">
+        <table >
+
+          <tr>
+            <td>Hora</td>
+            <th class="largura-col">Segunda
+              <span>02/01/2023</span></th>
+            <th class="largura-col">Terça
+              <span>03/01/2023</span></th>
+            <th class="largura-col">Quarta
+              <span>04/01/2023</span></th>
+            <th class="largura-col">Quinta
+              <span>05/01/2023</span></th>
+            <th class="largura-col">Sexta
+              <span>06/01/2023</span></th>
+          </tr>
+
+
+          <tbody>
+          <tr><td>08:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>09:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>10:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>11:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>12:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>13:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>14:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>15:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>16:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          <tr><td>17:00<td></td><td></td><td></td><td></td><td></td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </body>
+</html>

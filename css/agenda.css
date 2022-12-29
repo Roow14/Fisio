@@ -1,0 +1,15 @@
+
+.cabecalho {
+position: absolute;
+  margin: -600px 10px 10px 300px;
+  color: #222222;
+}
+
+.btn-default {
+  width: 80px;
+  padding: 10px;
+  margin: 1px;
+  background: rgb( 254,0,0,0.3);
+  color: #b82e24;
+}
+

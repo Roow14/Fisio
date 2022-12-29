@@ -1,0 +1,168 @@
+body {
+
+}
+/*menu transparente*/
+nav#menu ul {
+  list-style: none;
+}
+nav#menu {
+  top:0;
+  width: 20%;
+  height: 650px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+
+}
+nav#home {
+  cursor: pointer;
+  color: white;
+  margin: -40px 20px 20px 20px;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000000;
+  text-decoration: none;
+}
+nav#menu li:hover{
+  background: rgba(0,0,0,0.7);
+}
+
+/*menu*/
+.wrapper {
+  max-width: 400px;
+  margin: -50px 0px 40px 0px;
+}
+/*titulo*/
+.titulo {
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  margin: 6px;
+  top: 20px;
+  left: -20px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: white;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px #000000;
+  text-decoration: none;
+
+}
+/*icone +*/
+.titulo::after {
+  content: '+';
+  float: right;
+  transition: transform .3s ease;
+}
+/*formatação conteudo*/
+.conteudo {
+  position: relative;
+  cursor: pointer;
+  padding: 2px;
+  margin: 6px;
+  top: 20px;
+  left: -10px;
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #ffff00;
+  display: none;
+  border-radius: 10px;
+}
+
+/*formatação linha quebrada*/
+.trigger-input {
+  display: none;
+}
+.trigger-input:checked + .trigger-wrapper .titulo::after {
+  transform: rotate(45deg);
+  color: #b82e24;
+
+}
+.trigger-input:checked + .trigger-wrapper .conteudo {
+  display: block;
+}
+/*menu pesquisa*/
+
+.btn {
+  cursor: pointer;
+  width: 20px;
+  margin: 5px 0px -5px -3px;
+  background: limegreen;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px  #000000;
+}
+.search-txt {
+  font-size: 15px;
+
+}
+.search-box {
+  margin: 0px 0px 5px 20px;
+
+
+}/*formatação segundo menu*/
+nav#demais ul {
+  list-style: none;
+}
+
+nav#demais li {
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+  left: -20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+div#conteudo2 {
+  position: absolute;
+  cursor: pointer;
+  margin: -600px 20px 10px 100px;
+  left: 300px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #000000;
+
+
+}
+
+.btn-success {
+  background-color: #5cb85c;
+  width: 100px;
+
+}
+.btn-defaultt {
+  background-color: #f1f1f1;
+  border: 1px solid #222222;
+  padding: 2px;
+  margin: 10px 3px 4px 3px;
+}
+.table {
+  padding: 5px;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid #222222;
+}
+.table td{
+  border: 1px solid #222222;
+  background: rgb(240, 240, 240,0.8)
+}
+.btn-default {
+  padding: 1px;
+  background: rgba(0,0,0,0.1);
+  font-size: 17px;
+  color: green;
+  text-decoration: none;
+}
+nav#menu {
+  position: fixer;
+}
+h3 {
+background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+}
+.Link  {
+  padding: 10px;
+text-decoration: none;
+
+}

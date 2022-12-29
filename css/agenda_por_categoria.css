@@ -1,0 +1,58 @@
+h3 {
+  position: absolute;
+  margin: -200px 10px 10px 300px;
+  color: #222222;
+  font-size: 20px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  box-shadow: 0px 1px 10px  #000000;
+}
+div#agenda {
+  position: absolute;
+  margin: -150px 10px 10px 300px;
+}
+.btn-success {
+  margin: 4px 20px 10px 0px;
+  width: 80px;
+  background: rgb( 256,60,60,0.5);
+  color: darkred;
+  border: none;
+  font-size: 15px;
+  padding: 4px;
+
+}
+.btn-default  {
+  background: rgb( 256,60,60,0.5);
+}
+
+.form-group {
+  position: relative;
+  font-size: 20px;
+  display: inline-block;
+}
+.form-control {
+  font-size: 15px;
+}
+.table {
+    background: rgba(240,240,240,0.5);
+  margin: 250px 10px 10px 300px;
+  font-size: 20px;
+  border: 1px solid #222222;
+
+}
+.table td {
+  color: #222222;
+
+  border: 1px solid #222222 ;
+}
+.table tr a {
+  text-shadow:none;
+
+}
+.table th {
+  background-color: #5cb85c;
+  border: 1px solid #222222 ;
+}
+nav#menu {
+  position: fixed;
+}

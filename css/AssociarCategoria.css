@@ -1,0 +1,65 @@
+
+nav#menu {
+  position: fixed;
+}
+h3 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+  width: 280px;
+}
+div#conteudo {
+  position: absolute;
+  margin: 0px 10px 10px 350px;
+  color: #222222;
+  font-size: 15px;
+}
+.btn-success {
+  padding: 10px;
+  width: 90px;
+}
+.btn-success:hover{
+  background: #f1f1f1;
+}
+.btn-defaultt {
+padding: 9px;
+margin: 1px;
+  background: rgba(255, 99, 71, 0.2);
+  border: 2px solid #222222;
+  color: #b82e24;
+  font-size: 15px;
+  text-decoration: none;
+}
+.btn-defaultt:hover {
+  color: #f1f1f1;
+}
+.btn-default {
+  padding: 5px;
+  margin: 8px ;
+  background: rgba(255, 99, 71, 0.2);
+  border: 2px solid #222222;
+  color: #b82e24;
+  font-size: 15px;
+
+}
+.btn-default:hover {
+  color: #f1f1f1;
+}
+.table {
+  padding: 10px;
+  width: 1100px;
+  border: 1px solid #b82e24;
+  margin: 15px 0px 10px 0px;
+}
+.table th{
+  background-color: #b82e24;
+}
+.table td {
+  border: 1px solid #222222;
+  font-size: 20px;
+}
+.table td:hover {
+  background: rgba(256,0,0,0.3);
+  color: #f1f1f1;
+
+}

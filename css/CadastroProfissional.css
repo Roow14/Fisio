@@ -1,0 +1,37 @@
+nav#menu {
+  position: fixed;
+}
+
+
+h3 {
+  padding: 10px;
+  width: 350px;
+  font-size: 30px;
+  margin: 10px 10px 10px 350px;
+}
+.row {
+  margin: 10px 10px 10px 350px;
+
+}
+.col-sm-9 {
+  margin: -30px 10px 10px 220px;
+
+}
+
+.col-lg-6 {
+  font-size: 25px;
+}
+.col-lg-0 {
+
+  margin: -410px 10px 10px 520px;
+
+}
+.btn-success {
+  width: 90px;
+  padding: 5px;
+  margin: 20px 0px 0px 0px;
+
+}
+.btn-success:hover{
+  background: #f1f1f1;
+}

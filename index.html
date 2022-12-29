@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Principal</title>
+  <link rel="stylesheet" type="text/css" href="css/fisio.css">
+
+  <style type="text/css">
+
+    body{
+      background-image: url("img/fundo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  </style>
+  <a href="Fisiopeti.html">
+  <nav id="menu">
+
+    <img src="img/logof.png" width="70%">
+    </a>
+    <nav id="home">
+
+        <h3></h3>
+
+    </nav>
+<ul>
+
+
+
+    <div class="wrapper">
+   <div class="lista">
+     <input type="checkbox" class="trigger-input" id="agenda">
+     <div class="trigger-wrapper">
+       <label for="agenda">
+         <li class="titulo">Agenda FP </li>
+       </label>
+
+       <li class="conteudo"><a href="agenda%20paciente.html">Agenda do Paciente</a> </li>
+       <li class="conteudo"><a href="agendao%20profissional.html">Agenda do Profissional</a> </li>
+       <li class="conteudo"><a href="agenda%20por%20categoria.html">Agenda por Categoria</a></li>
+       <li class="conteudo"><a href="agendabasedacrianca.html">Agenda base Paciente</a></li>
+       <li class="conteudo"><a href="agendabaseprofissional.html">Agenda base Profissional</a></li>
+       <li class="conteudo"><a href="CriarAgendaSemanal.html">criar agenda da Semana</a></li>
+
+     </div>
+   </div>
+
+    <div class="lista">
+      <input type="checkbox" class="trigger-input" id="profissional">
+      <div class="trigger-wrapper">
+        <label for="profissional">
+          <li class="titulo">Profissional</li>
+        </label>
+        <li class="conteudo"><a href="ListarProfissional.html">Listar Profissionais</a></li>
+        <li class="conteudo"><a href="Associar%20categoria.html">Associar Categoria</a></li>
+        <li class="conteudo"><a href="Cadastro%20Profissional.html">Cadastrar Profissional<a/></li>
+        <li class="conteudo">Importa Foto</li>
+        <li class="conteudo">Listar Foto</li>
+
+
+      </div>
+    </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="paciente">
+        <div class="trigger-wrapper">
+          <label for="paciente">
+            <li class="titulo">Paciente</li>
+          </label>
+          <li class="conteudo">Cadastrar Paciente</li>
+          <li class="conteudo">Listar Paciente</li>
+          <li class="conteudo">Listar Escolas</li>
+          <li class="conteudo">Importar Foto</li>
+          <li class="conteudo">Listar Fotos</li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="medico">
+        <div class="trigger-wrapper">
+          <label for="medico">
+            <li class="titulo">Médico</li>
+          </label>
+          <li class="conteudo">Listar Médico</li>
+          <li class="conteudo">Cadastrar Médico</li>
+        </div>
+      </div>
+</ul>
+
+
+
+      <form action="/fisiopeti/content/paciente/pesquisar-paciente.php" method="post">
+        <div class="search-box">
+          <input class="search-txt" type="text" name="" placeholder="Paciente" name="PesquisaPaciente">
+          <img src="img/lupa.png" class="btn">
+          <a class="search-bth" href="#"></a>
+        </div>
+      </form>
+
+    <form action="/fisiopeti/content/paciente/pesquisar-profissional.php" method="post">
+      <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Profissional" name="PesquisaProfissional">
+        <img src="img/lupa.png" class="btn">
+        <a class="search-bth" href="#"></a>
+      </div>
+<nav id="demais">
+  <ul>
+    <li> <a href="profissionalfp+.html">Programação FP+</a> </li>
+    <li>Configuração</li>
+    <li>Ajuda</li>
+  </ul>
+    </nav>
+      </div>
+  </nav>
+      </nav>
+  <div id="visao">
+    <h3>Visão geral</h3>
+  </div>
+
+  <div id="agenda">
+    <ul>
+      <li><a href="agenda">&nbsp;Agenda por Categoria<br>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Semanal</a></li>
+      <li><a href="agenda">&nbsp;&nbsp;Agenda do Paciente<br>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Semanal </a></li>
+      <li><a href="agenda">Agenda do Profissional<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Semanal</a></li>
+      <li><a href="agenda">&nbsp;&nbsp;Agenda Equoterapia<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Semanal</br></a></li>
+
+      </li>
+    </ul>
+  </div>
+  <div id="agendabase">
+    <ul>
+      <li><a href="agenda">&nbsp;&nbsp;&nbsp;Agenda baso do <br>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; Paciente</br></a></li>
+      <li><a href="agenda">&nbsp;&nbsp;&nbsp;Agenda base do <br>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;Terapeuta</br></a></li>
+      <li><a href="agenda">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agenda base <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equoterapia</br></a></li>
+      <li><a href="agenda">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relatório <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;agenda base</br></a></li>
+
+      </li>
+    </ul>
+  </div>
+  <div id="demais">
+    <ul>
+      <li><a href="agenda">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paciente</a></li>
+      <li><a href="agenda">Convênio Médico</a></li>
+      <li><a href="agenda">&nbsp;&nbsp;&nbsp;&nbsp;Agenda do dia</a></li>
+      <li><a href="agenda">&nbsp;&nbsp;Pesquisas gerais</a></li>
+      </li>
+        </ul>
+  </div>
+
+</body>
+</html>

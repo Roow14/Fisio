@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda do Paciente2</title>
+  <link rel="stylesheet" type="text/css" href="css/fisio.css">
+  <link rel="stylesheet" type="text/css" href="css/paciente.css">
+
+  <style type="text/css">
+
+    body{
+      background-image: url("img/fundo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  </style>
+
+  <a href="http://localhost:63342/Fisiopeti.html/Fisiopeti.html">
+    <nav id="menu">
+
+      <img src="img/logof.png" width="70%">
+  </a>
+  <nav id="home">
+
+    <h3></h3>
+
+  </nav>
+  <ul>
+
+    <div class="wrapper">
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="agenda">
+        <div class="trigger-wrapper">
+          <label for="agenda">
+            <li class="titulo">Agenda FP</li>
+          </label>
+
+          <li class="conteudo"><a href="agenda%20paciente.html">Agenda do Paciente</a> </li>
+          <li class="conteudo"><a href="agendao%20profissional.html">Agenda do Profissional</a> </li>
+          <li class="conteudo"><a href="agenda%20por%20categoria.html">Agenda por Categoria</a></li>
+          <li class="conteudo"><a href="agendabasedacrianca.html">Agenda base Paciente</a></li>
+          <li class="conteudo"><a href="agendabaseprofissional.html">Agenda base Profissional</a></li>
+          <li class="conteudo"><a href="CriarAgendaSemanal.html">criar agenda da Semana</a></li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="profissional">
+        <div class="trigger-wrapper">
+          <label for="profissional">
+            <li class="titulo">Profissional</li>
+          </label>
+          <li class="conteudo">Listar Profissionais</li>
+          <li class="conteudo">Associar Categoria</li>
+          <li class="conteudo">Cadastrar Profissional</li>
+          <li class="conteudo">Importa Foto</li>
+          <li class="conteudo">Listar Foto</li>
+
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="paciente">
+        <div class="trigger-wrapper">
+          <label for="paciente">
+            <li class="titulo">Paciente</li>
+          </label>
+          <li class="conteudo">Cadastrar Paciente</li>
+          <li class="conteudo">Listar Paciente</li>
+          <li class="conteudo">Listar Escolas</li>
+          <li class="conteudo">Importar Foto</li>
+          <li class="conteudo">Listar Fotos</li>
+
+        </div>
+      </div>
+
+      <div class="lista">
+        <input type="checkbox" class="trigger-input" id="medico">
+        <div class="trigger-wrapper">
+          <label for="medico">
+            <li class="titulo">Médico</li>
+          </label>
+          <li class="conteudo">Listar Médico</li>
+          <li class="conteudo">Cadastrar Médico</li>
+        </div>
+      </div>
+  </ul>
+
+
+  <form action="/fisiopeti/content/paciente/pesquisar-paciente.php" method="post">
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Paciente" name="PesquisaPaciente">
+      <img src="img/lupa.png" class="btn">
+      <a class="search-bth" href="#"></a>
+    </div>
+  </form>
+
+  <form action="/fisiopeti/content/paciente/pesquisar-profissional.php" method="post">
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Profissional" name="PesquisaProfissional">
+      <img src="img/lupa.png" class="btn">
+      <a class="search-bth" href="#"></a>
+    </div>
+    <nav id="demais">
+      <ul>
+        <li>Profissional FP+</li>
+        <li>Configuração</li>
+        <li>Ajuda</li>
+      </ul>
+    </nav>
+    </div>
+    </nav>
+    <div id="conteudo2">
+      <div>
+        <h3>Pacientes</h3>
+        <form action="aplicar-filtro-lista-pacientes.php" method="post" class="form-inline" style="margin-bottom: 25px;">
+          <label>Paciente:</label>
+          <input type="text" name="PesquisaPaciente" class="form-control" value="" placeholder="Nome">
+
+          <label>Status</label>
+          <select name="StatusPaciente" class="form-control">
+            <option value="">Ativo</option>
+            <option value="2">Inativo</option>
+            <option value="3">Todos</option>
+          </select>
+          <button type="submit" class="btn btn-success">Confirmar</button>
+        </form>
+        <p style="margin-top: 15px;"><span style="margin-right: 15px;">
+        <label>Total:</label> 542</span>
+          <label>Página:</label> 2/46</p>
+        <div id="Paginacao">
+          <a href="agenda%20paciente.html"</a>
+          <a class="btn btn-defaultt"href="agenda%20paciente.html" >&lsaquo; Anterior</a>
+          <a class="btn btn-defaultt"href="agenda%20paciente2.html" > Próximo &rsaquo;</a>
+        </div>
+
+        <table class="table table-striped table-hover table-condensed">
+          <thead><th>Nome completo</th>
+          <th>&nbsp;&nbsp;Diagnóstico&nbsp;&nbsp;</th>
+          <th style="winth:160px;"> Acão</th>
+
+          <tbody><tr><td><a href="paciente.php?id_paciente=4" class="Link">Ana Beatriz Pereira de Sá
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=4" class="btn btn-default">Ver agenda</a></td></tr>
+
+        <tr><td><a href="paciente.php?id_paciente=627"
+                   class="Link">Ana Clara Oliveira Bispo</a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=627" class="btn btn-default">Ver agenda</a></td></tr>
+
+        <tr><td><a href="paciente.php?id_paciente=761"
+                   class="Link">Ana Vitória Marques Silva</a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=761" class="btn btn-default">Ver agenda</a></td></tr>
+
+        <tr><td><a href="paciente.php?id_paciente=347"
+                   class="Link">Anderson Pereira Dos Santos Junior</a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=347" class="btn btn-default">Ver agenda</a></td></tr>
+
+        <tr><td><a href="paciente.php?id_paciente=230"
+                   class="Link">André de Faria Pinheiro </a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=230" class="btn btn-default">Ver agenda</a></td></tr>
+
+        <tr><td><a href="paciente.php?id_paciente=794"
+                   class="Link">André Luiz Santos</a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=794" class="btn btn-default">Ver agenda</a></td></tr>
+
+        <tr><td><a href="paciente.php?id_paciente=284"
+                   class="Link">André Santos Vaz Tostes</a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=284" class="btn btn-default">Ver agenda</a></td></tr><tr>
+
+          <td><a href="paciente.php?id_paciente=232"
+                 class="Link">Anna Luiza Correia Cavalcante</a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=232" class="btn btn-default">Ver agenda</a></td></tr><tr>
+
+          <td><a href="paciente.php?id_paciente=813"
+                 class="Link">Anthony Sartori Bonfim</a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=813" class="btn btn-default">Ver agenda</a></td></tr><tr>
+
+          <td><a href="paciente.php?id_paciente=533"
+                 class="Link">Anthony Mariano Trindade Da silva </a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=533" class="btn btn-default">Ver agenda</a></td></tr>
+
+        <tr><td><a href="paciente.php?id_paciente=602"
+                   class="Link">Anthony Miguel Da Silva </a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=602" class="btn btn-default">Ver agenda</a></td></tr><tr>
+
+          <td><a href="paciente.php?id_paciente=525"
+                 class="Link">Antonella Domingues Spinola</a></td><td></td><td><a href="../agenda/agenda-paciente.php?id_paciente=525" class="btn btn-default">Ver agenda</a></td></tr>
+
+
+
+        <div class="paginaa">
+
+          </div>
+
+
+          </tbody></table></div>
+
+
+      <div>
+        <p>Alterar o nº de pacientes mostrados por página.</p>
+        <form action="../configuracao/configurar-itens-por-pagina-2.php?Origem=../paciente/listar-pacientes.php" method="post" class="form-inline">
+          <input type="number" name="Valor" class="form-control" value="542" style="margin-bottom: 5px;">
+          <button type="submit" class="btn btn-success">Confirmar</button>
+        </form>
+      </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </body>
+</html>
